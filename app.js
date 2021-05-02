@@ -16,5 +16,7 @@ btn.addEventListener('click', () => {
 });
 
 const getRandomNumber = () => {
-    return Math.floor(Math.random()*6);
+    return Math.floor(Math.random() * colors.length);
+    // note that Math.floor() always rounds down to the nearest integer and not UP
+    // for example Math.floor(3.9) will return 3 instead of 4 as in normal mathematics
 }
